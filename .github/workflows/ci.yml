@@ -27,3 +27,10 @@ jobs:
     - name: Run tests
       run: |
         python -m pytest tests/ --maxfail=5 --disable-warnings
+
+    - name: Lint with flake8
+      run: |
+        pip install flake8
+        flake8 .
+
+    
